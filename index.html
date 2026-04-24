@@ -60,7 +60,7 @@
     .brand-item {
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 8px;
         cursor: pointer;
         overflow: hidden;
         text-decoration: none;
@@ -70,21 +70,20 @@
         opacity: 0;
         white-space: nowrap;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        font-size: 11px;
-        font-weight: 700;
+        font-size: 13px;
+        font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #111;
     }
-    /* Üzerine gelince yazının açılması */
     .brand-item:hover .brand-text {
-        max-width: 120px;
+        max-width: 130px;
         opacity: 1;
     }
     .brand-icon {
-        height: 16px;
+        height: 24px; /* İkonlar büyütüldü */
         object-fit: contain;
-        opacity: 0.5;
+        opacity: 0.6;
         transition: opacity 0.3s;
         filter: grayscale(100%);
     }
@@ -93,24 +92,24 @@
     }
 </style>
 
-<header class="bg-white border-b border-gray-200 py-4 px-6 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+<header class="bg-white border-b border-gray-200 py-5 px-6 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between relative">
         
-        <div class="flex-1 flex items-center gap-4">
+        <div class="flex items-center gap-5">
             
             <a href="https://shop.vulcaworks.com" target="_blank" class="brand-item">
                 <img src="img/icon3.png" alt="Vulca" class="brand-icon">
                 <span class="brand-text">Vulca Works</span>
             </a>
             
-            <div class="w-[1px] h-4 bg-gray-300"></div>
+            <div class="w-[2px] h-6 bg-gray-300"></div>
             
             <a href="https://izmir3d.com" target="_blank" class="brand-item">
                 <img src="img/icon.png" alt="İzmir3D" class="brand-icon">
                 <span class="brand-text">İzmir 3D</span>
             </a>
             
-            <div class="w-[1px] h-4 bg-gray-300"></div>
+            <div class="w-[2px] h-6 bg-gray-300"></div>
             
             <a href="https://uretim3d.com" target="_blank" class="brand-item">
                 <img src="img/icon2.png" alt="Üretim 3D" class="brand-icon">
@@ -119,16 +118,15 @@
 
         </div>
 
-        <div class="flex-shrink-0 flex justify-center">
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <a href="index.html">
-                <img src="img/logo3.png" alt="Vulca Works" class="h-5 md:h-6">
+                <img src="img/logo3.png" alt="Vulca Works" class="h-9 md:h-12 object-contain">
             </a>
         </div>
 
-        <div class="flex-1 flex justify-end">
-            <a href="https://shop.vulcaworks.com" class="bg-black text-white px-6 py-2.5 text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition rounded-sm flex items-center gap-2">
+        <div class="flex justify-end">
+            <a href="https://shop.vulcaworks.com" class="bg-black text-white px-8 py-3 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition rounded-sm">
                 Mağazaya Git
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
 
